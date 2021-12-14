@@ -13,7 +13,7 @@ namespace SimpleAppTaskRunner
         //static IWebDriver driver = new ChromeDriver();
         static void Main()
         {
-            string url = "https://github.com";
+            string url = "https://amazon.com";
 
             new DriverManager().SetUpDriver(new ChromeConfig());
             IWebDriver driver = new ChromeDriver();
@@ -22,9 +22,12 @@ namespace SimpleAppTaskRunner
 
             driver.Navigate().GoToUrl(url);
 
-            IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
-            searchInput.SendKeys("selenium");
+            IWebElement searchInput = driver.FindElement(By.CssSelector("#twotabsearchtextbox"));
+            searchInput.SendKeys("iphone");
             searchInput.SendKeys(Keys.Enter);
+
+
+            Thread.Sleep(30000);
 
             driver.Quit();
         }
