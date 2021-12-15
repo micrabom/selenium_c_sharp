@@ -3,11 +3,10 @@
 
 ## I'm a Husband, Father, Developer, and QA Engineer!!
 
+- 
+# Learning Selenium in C#
 
-- 🌱 I’m currently learning selenium automation 🤣
-- 👯 I’m looking to collaborate with other qa tester
-- 🥅 2021 Goals: To master selenium automation using C#
-- ⚡ Fun fact: I love basketball and play bass / drums
+On this repos I want to learn QA Automation via Selenium in C#
 
 ### Connect with me:
 
