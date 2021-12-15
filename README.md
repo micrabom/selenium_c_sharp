@@ -1,9 +1,8 @@
 ### Hi there, I'm Rab - aka [rabski][website] 👋 
 
 
-## I'm a Husband, Father, Developer, and QA Engineer!!
+# I'm a Husband, Father, Developer, and QA Engineer!!
 
-- 
 # Learning Selenium in C#
 
 On this repos I want to learn QA Automation via Selenium in C#
