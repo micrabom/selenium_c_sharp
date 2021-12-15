@@ -1,6 +1,6 @@
 # Learning Selenium in C#
 
-On this repos I want to learn QA Automation via Selenium in C#
+I create this repository for documentation and practice QA Automation via Selenium in C#
 
 
 
