@@ -20,7 +20,18 @@ Using ChromeDriver and maximizing browser
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
 ```
+Using Assert in Nunit framework and Linq IList
+```C#
+            IList<string> actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
+                .Select(item => item.Text.ToLower())
+                .ToList();
 
+            IList<string> expectedItems = actualItems
+                .Where(item => item.Contains(searchPhrase))
+                .ToList();
+
+            Assert.AreEqual(expectedItems, actualItems);
+```
 
 ## Framework
 
