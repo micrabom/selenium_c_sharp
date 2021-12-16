@@ -13,7 +13,13 @@ Syntax for sendkeys for search and enter in Selenium
   IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
             searchInput.SendKeys(searchPhrase);
             searchInput.SendKeys(Keys.Enter);
+```
 
+## Using ChromeDriver and maximizing browser
+```C#
+            new DriverManager().SetUpDriver(new ChromeConfig());
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
 ```
 
 
