@@ -8,11 +8,12 @@ I'm Rab Michael Bombeo a QA Engineer.
 
 ## Codes
 
-Using ChromeDriver and maximizing browser
+Using ChromeDriver, maximizing browser, and navigate to Url
 ```C#
             new DriverManager().SetUpDriver(new ChromeConfig());
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl(url);
 ```
 Search and EnterKeys
 ```C#
