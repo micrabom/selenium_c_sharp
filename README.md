@@ -7,18 +7,18 @@ On this repos I want to learn QA Automation via Selenium in C#
 I'm Rab Michael Bombeo a QA Engineer.
 
 ## Codes
-Search and EnterKeys
 
-```C#
-  IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
-            searchInput.SendKeys(searchPhrase);
-            searchInput.SendKeys(Keys.Enter);
-```
 Using ChromeDriver and maximizing browser
 ```C#
             new DriverManager().SetUpDriver(new ChromeConfig());
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+```
+Search and EnterKeys
+```C#
+  IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
+            searchInput.SendKeys(searchPhrase);
+            searchInput.SendKeys(Keys.Enter);
 ```
 Using Assert in Nunit framework and Linq IList
 ```C#
