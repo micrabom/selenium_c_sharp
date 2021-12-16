@@ -7,7 +7,7 @@ On this repos I want to learn QA Automation via Selenium in C#
 I'm Rab Michael Bombeo a QA Engineer.
 
 ## Search and EnterKeys
-Syntax for search and Enter in Selenium
+Syntax for sendkeys for search and enter in Selenium
 
 ```C#
   IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
