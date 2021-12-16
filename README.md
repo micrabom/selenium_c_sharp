@@ -15,13 +15,18 @@ I'm Rab Michael Bombeo a QA Engineer.
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl(url);
 ```
-Search and EnterKeys
+### Search and EnterKeys
 ```C#
   IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
             searchInput.SendKeys(searchPhrase);
             searchInput.SendKeys(Keys.Enter);
 ```
-Using Assert in Nunit framework and Linq IList
+### Framework
+
+ - First, find on all list in the search(all selected item is in lowercase format)
+ - Second, expected items are equal to actual items that in the search phase,
+ - Thirds, if the expectItems and Acutal items are equals it should assert.
+
 ```C#
             IList<string> actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
                 .Select(item => item.Text.ToLower())
