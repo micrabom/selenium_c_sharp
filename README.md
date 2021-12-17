@@ -1,39 +1,54 @@
-### Hi there, I'm Rab - aka [rabski][website] 👋 
 
+# Learning Selenium in C#
 
-## I'm a Husband, Father, Developer, and QA Engineer!!
+On this repos I want to learn QA Automation via Selenium in C#
 
+## 🚀 About Me
+I'm Rab Michael Bombeo a QA Engineer.
 
-- 🌱 I’m currently learning selenium automation 🤣
-- 👯 I’m looking to collaborate with other qa tester
-- 🥅 2021 Goals: To master selenium automation using C#
-- ⚡ Fun fact: I love basketball and play bass / drums
+## Codes
 
-### Connect with me:
+### Using ChromeDriver, maximizing browser, and navigate to Url
+```C#
+            new DriverManager().SetUpDriver(new ChromeConfig());
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl(url);
+```
+### Search and EnterKeys
+```C#
+  IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
+            searchInput.SendKeys(searchPhrase);
+            searchInput.SendKeys(Keys.Enter);
+```
+### Framework
 
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+ - First, find on all list in the search(all selected item is in lowercase format)
+ - Second, expected items are equal to actual items that in the search phase,
+ - Thirds, if the expectItems and Acutal items are equals it should assert.
 
+```C#
+            IList<string> actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
+                .Select(item => item.Text.ToLower())
+                .ToList();
 
----
-<br />
+            IList<string> expectedItems = actualItems
+                .Where(item => item.Contains(searchPhrase))
+                .ToList();
 
-### Languages and Tools:
+            Assert.AreEqual(expectedItems, actualItems);
+```
+## Packages Installed
 
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<br />
----
+ - [Selenium.WebDriver](https://www.selenium.dev/documentation/webdriver/)
+ - [WebDriverManager](https://www.selenium.dev/documentation/webdriver/)
+ - [Nunit](https://nunit.org/)
+ 
+## Framework
 
+ - [Linq](https://www.c-sharpcorner.com/UploadFile/72d20e/concept-of-linq-with-C-Sharp/)
 
-[website]: https://bit.ly/RambsWebPage
-[twitter]: https://twitter.com/rambsinteractiv
-[youtube]: https://www.youtube.com/channel/UCYPWfJaLRjY_CS5tvMaNRgQ/featured
-[instagram]: https://instagram.com/rambsinteractive
-[linkedin]: https://linkedin.com/in/rambombeo/
+## Languages
+
+ - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+
