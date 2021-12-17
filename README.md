@@ -38,10 +38,14 @@ I'm Rab Michael Bombeo a QA Engineer.
 
             Assert.AreEqual(expectedItems, actualItems);
 ```
+## Packages Installed
 
+ - [Selenium.WebDriver](https://www.selenium.dev/documentation/webdriver/)
+ - [WebDriverManager](https://www.selenium.dev/documentation/webdriver/)
+ - [Nunit](https://nunit.org/)
+ 
 ## Framework
 
- - [Nunit](https://nunit.org/)
  - [Linq](https://www.c-sharpcorner.com/UploadFile/72d20e/concept-of-linq-with-C-Sharp/)
 
 ## Languages
