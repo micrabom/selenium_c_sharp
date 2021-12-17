@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SimpleApplicationRunner",
+    "\\SimpleApplicationRunner\\SimpleApplicationRunner"
   ],
+  "SelectedNode": "\\SimpleApplicationRunner\\SimpleApplicationRunner.sln",
   "PreviewInSolutionExplorer": false
 }
