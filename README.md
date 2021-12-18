@@ -42,6 +42,7 @@ I'm Rab Michael Bombeo a QA Engineer.
 
  - "OneTimeSetUp" - called once per test class before all test method, is used to set up global variable (i.e., WebDriver), should be static.
  - "OneTimeTearDown" - called once per test class after all test methods, it is used to close global resources, should be static also. 
+ - "SetUp" - called before each test method, is used to have fresh resources for each test method, should be non-static
 
 
 ## Packages Installed
