@@ -27,6 +27,11 @@ I'm Rab Michael Bombeo a QA Engineer.
  - Second, expected items are equal to actual items that in the search phase,
  - Thirds, if the expectItems and Acutal items are equals it should assert.
 
+### NUnit Hooks
+
+ - "OneTimeSetUp" - called once per test class before all test method, is used to set up global variable (i.e., WebDriver), should be static.
+ - "OneTimeTearDown" - called once per test class after all test methods, it is used to close global resources, should be static also. 
+
 ```C#
             IList<string> actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
                 .Select(item => item.Text.ToLower())
