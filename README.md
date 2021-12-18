@@ -21,7 +21,7 @@ I'm Rab Michael Bombeo a QA Engineer.
             searchInput.SendKeys(searchPhrase);
             searchInput.SendKeys(Keys.Enter);
 ```
-### Framework
+### Assertion
 
  - First, find on all list in the search(all selected item is in lowercase format)
  - Second, expected items are equal to actual items that in the search phase,
