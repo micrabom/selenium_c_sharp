@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SimpleApplicationRunner",
-    "\\SimpleApplicationRunner\\SimpleApplicationRunner"
+    "\\04AssertionHomeTask",
+    "\\04AssertionHomeTask\\AssertionHomeTask"
   ],
-  "SelectedNode": "\\SimpleApplicationRunner\\SimpleApplicationRunner.sln",
+  "SelectedNode": "\\04AssertionHomeTask\\AssertionHomeTask\\AssertionHomeTaskRunner.cs",
   "PreviewInSolutionExplorer": false
 }

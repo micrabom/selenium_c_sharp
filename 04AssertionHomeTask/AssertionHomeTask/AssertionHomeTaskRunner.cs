@@ -32,17 +32,17 @@ namespace AssertionHomeTask
 
             /*--- Find actualItems and know the actualItems ---*/
 
-            var actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
+            var actualItems = driver.FindElements(By.CssSelector("[data-component-type='s-search-result'] h2 .a-link-normal"))
                 .Select(items => items.Text.ToLower() + items.GetAttribute("href").ToLower())
                 .ToList();
 
             var expectedItems = actualItems
-                .Where(items => items.Contains("invalid search phrase"))
+                .Where(items => items.Contains(searchPhrase))
                 .ToList();
 
             Assert.AreEqual(expectedItems, actualItems);
 
-            Thread.Sleep(25000);
+          /*  Thread.Sleep(25000);*/
 
             driver.Quit();
         }

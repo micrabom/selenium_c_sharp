@@ -737,11 +737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\AssertionHomeTask\\AssertionHomeTask\\AssertionHomeTask.csproj",
+      "projectUniqueName": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\04AssertionHomeTask\\AssertionHomeTask\\AssertionHomeTask.csproj",
       "projectName": "AssertionHomeTask",
-      "projectPath": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\AssertionHomeTask\\AssertionHomeTask\\AssertionHomeTask.csproj",
+      "projectPath": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\04AssertionHomeTask\\AssertionHomeTask\\AssertionHomeTask.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\AssertionHomeTask\\AssertionHomeTask\\obj\\",
+      "outputPath": "D:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2019\\source\\repos\\selenium_c_sharp\\04AssertionHomeTask\\AssertionHomeTask\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
