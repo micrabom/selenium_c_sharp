@@ -45,9 +45,10 @@ I'm Rab Michael Bombeo a QA Engineer.
  - "SetUp" - called before each test method, is used to have fresh resources for each test method, should be non-static
  - "TearDown" - called after each test method, is used to collect test information (in case failure get screens, URL), should be non-static.
 
-### Implicits Waits
- - Discussed web content load strategy in Web Applications
- - Talked about Wait types in Selenium
+### Implicits and Exp0ilcit Waits
+
+Discussed web content load strategy in Web Applications and talked about Wait types in Selenium
+
  - Experimented with implicit wait in our test application
 
 
