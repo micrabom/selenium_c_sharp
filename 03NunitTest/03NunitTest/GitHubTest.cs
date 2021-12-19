@@ -15,35 +15,46 @@ namespace _03NunitTest
     {
         private const string SearchPhrase = "selenium";
 
+        private static IWebDriver driver;
+
+        [OneTimeSetup]
+        public static void SetUpDriver()
+        {
+            new DriverManager().SetUpDriver(new ChromeConfig());
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+        }
+
         [Test]
         public  void CheckGitHubSearch()
         {
             string url = "https://github.com";
-            
-
-            new DriverManager().SetUpDriver(new ChromeConfig());
-            IWebDriver driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-
+                        
             driver.Navigate().GoToUrl(url);
 
             IWebElement searchInput = driver.FindElement(By.CssSelector("[name='q']"));
-            searchInput.SendKeys("selenium");
+            searchInput.SendKeys(SearchPhrase);
             searchInput.SendKeys(Keys.Enter);
 
             IList<string> actualItems = driver.FindElements(By.CssSelector(".repo-list-item"))
                 .Select(items => items.Text.ToLower())
                 .ToList();
-
+             
             IList<string> expectedItems = actualItems
-                .Where(items => items.Contains(SearchPhrase))
+                .Where(items => items.Contains("invalid Search Phrase"))
                 .ToList();
 
-            Assert.True(actualItems.All(item => item.ToLower().Contains("invalid search pharase")));
+            Assert.AreEqual(expectedItems, actualItems);
 
-            Thread.Sleep(5000);
+         /*   Thread.Sleep(3000);*/
 
+            
+        }
+        [OneTimeTearDown]
+        public static void TearDownDriver()
+        {
             driver.Quit();
         }
+
     }
 }
